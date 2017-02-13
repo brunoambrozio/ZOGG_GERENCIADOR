@@ -4,7 +4,7 @@ sap.ui.define([
 	"use strict";
 
 	return Controller.extend("br.com.oggettiva.controller.App", {
-		
+	
 		REQUISICOES_ODATA: 'http://177.21.159.195:8000/sap/opu/odata/SAP/ZOGG_REQUISICOES_SRV_01',
 		REQUISICOES_GET_EXPAND_ENTITIES: '/RequisicoesSet?$expand=FluxoSet,HistoricoSet,MovColabAtual,MovColabProp,DesligamentoSet',
 		
@@ -14,7 +14,7 @@ sap.ui.define([
 		 * @param {sap.ui.model.Context} context The data context to be applied to the next page (optional)
 		 */
 		to : function (pageId, context) {
-			
+			var x = 1;
 			var app = this.getView().app;
 			
 			// load page on demand
